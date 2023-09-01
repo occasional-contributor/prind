@@ -179,6 +179,15 @@ docker compose -f docker-compose.extra.link-obico.yaml run --rm link-obico
 docker compose --profile mainsail --profile moonraker-obico up -d
 ```
 
+#### Spoolman
+[Spoolman by Donkie](https://github.com/Donkie/Spoolman) can be enabled via the `spoolman` Profile.  
+
+After starting the stack via 
+```bash
+docker compose --profile fluidd --profile spoolman up -d
+```
+
+Navigate to http://<yourprinter>/spoolman to access the spoolman webinterface.
 
 ## Updating
 Images are built daily and tagged with latest and the first seven chars of the commit-sha of the remote repo. 
